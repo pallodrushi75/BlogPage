@@ -1,0 +1,102 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+:root {
+  --bg-main: rgb(167, 212, 221);
+  --font-size: 22px;
+  --font-color: #000000;
+  --white: #ffffff;
+  --muted: #e9e1ff71;
+  --bg-card: #05004f;
+}
+*{
+  margin: 0;
+  padding:0;
+  box-string: border-box;
+  font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+html {
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--font-color) !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* NAVBAR */
+.Navbar {
+  background-color: var(--bg-main);
+  border-bottom: 1px solid #191919;
+
+  .Navbar_Links{
+
+    Button{
+        text-transform: inherit;
+        background-color: #191919;
+        color:white;
+        border-radius:20px;
+        padding:7px 10px;
+        font-size: 15px;
+    }
+
+    ul{
+      display:flex;
+      align-items: center;
+
+      li{
+        margin-left: 25px;
+        list-style: none;
+        cursor: pointer;
+      }
+    }
+   
+  }
+
+  .Navbar_Container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  img {
+    max-width: 180px;
+    padding:20px;
+  }
+}
+/* Navbar end*/
+
+/* Home */
+.home {
+  background-color: var(--bg-main);
+  
+
+  h1{
+    padding:20px;
+    font-size: 70px;
+    font-weight: 80;
+    color:#080808;
+  }
+  p{
+    font-size: 18px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:#292929;
+    margin-left:15px;
+  }
+  Button{
+    border: 1px solid #191919;
+    background-color:white;
+    text-transform: inherit;
+    border-radius:25px;
+    margin:25px 0;
+    font-size:16px;
+    padding:8px 15px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left:15px;
+  }
+  img{
+    max-width: 500px;
+  }
+}
