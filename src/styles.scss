@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
 .App {
   font-family: sans-serif;
   text-align: center;
@@ -71,6 +73,7 @@ body {
 /* Home */
 .home {
   background-color: var(--bg-main);
+  border-bottom: 1px solid #191919;
   
 
   h1{
@@ -99,4 +102,181 @@ body {
   img{
     max-width: 500px;
   }
+}
+
+/* Create post */
+
+form{
+  margin: 50px 0;
+
+  h1{
+    font-size: 50px;
+    font-weight: 80;
+    color:#080808;
+  }
+  .form_SubmitBtn{
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+
+    Button{
+      text-transform: inherit;
+      background-color: #191919;
+      color:white;
+      border-radius:10px;
+      padding:5px 25px;
+      font-size: 18px;
+
+  }
+  Button:hover{
+    background-color: #191919;
+    color:white;
+  }
+    
+  }
+
+
+
+
+
+  .form_InputDivs{
+      margin:20px 0;
+
+
+      p{
+        columns: #191919;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      input{
+        padding:10px;
+        width:100%;
+        font-size: 18px;
+        outline-width: inherit;
+        border:1px solid #080808;
+        border-radius:5px;
+      }
+  }
+}
+
+
+
+/* POSTS */
+.posts{
+  border-top: 2px solid #ababab;
+}
+.Medium_Post{
+  display:flex;
+  align-items: center;
+  margin: 25px 0;
+  cursor:pointer;
+  justify-content: space-between;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  .MuiSvgIcon-root{
+    color: rgba(117, 117, 117, 1);
+    font-size: 15px;
+    margin-top:2px;
+  }
+
+  .PostText{
+    .PostTimeStamp{
+      display:flex;
+      align-items: center;
+      margin-top:10px;
+      justify-content: space-between;
+      .PostBookMark{
+        font-size:25px;
+      }
+      
+
+      .TimePara{
+        
+        /*margin-bottom:5px;*/
+        span{
+          font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+          color: rgba(117, 117, 117, 1);
+          font-weight: 100px;
+          font-size:12px;
+
+          .MuiSvgIcon-root{
+            color: rgba(117, 117, 117, 1);
+            font-size: 15px;
+            margin-top:1px;
+          }
+        }
+      }
+    }
+    h2{
+      font-size: 22px;
+      font-weight: 700;
+      color: rgba(41, 41, 41, 1);    
+    }
+    p{
+      color: rgba(117, 117, 117, 1);
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  .PostImg{
+    /*max-width: 200px;*/
+   /* max-height: 100px;*/
+  }
+}
+
+/* Post Body */
+
+.PostBody{
+  padding:25px;
+  display: flex;
+  
+  justify-content: center;
+
+ 
+
+  .PostBodyContainer{
+   
+    max-width: 700px;
+    width:100%;
+    /*background-color: red;*/
+
+    img{
+      max-width: 700px;
+    }
+    span{
+      font-size: 14px;
+      color:#757575;
+      font-family: sohne, "Helvetica neue", Helvetica, Arial, sans-serif;
+      
+    }
+  }
+
+  h1{
+    font-size:48px;
+    color:#292929;
+    font-family: Raleway;
+    font-weight: bold;
+  }
+
+  p{
+    padding:15px 0;
+    color:#292929;
+    font-family: sohne, "Helvetica neue", Helvetica, Arial, sans-serif;
+    font-size:21px;
+  }
+ .subtitle{
+  p{
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:#757575;
+    font-weight: bolder;
+    font-size:22px;
+    padding:25px 0;
+  }
+ }
+
+ /* h1,p{
+    font-family:   Raleway;
+    
+  }*/
 }
